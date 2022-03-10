@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Kanit:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=MuseoModerno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+  <div class="firsthalf">
+    <button onclick="modal()" id="modal" class="modal"><ion-icon name="menu"></ion-icon></button>
+    <div id="select" class="select">
+      <button onclick="close()" id="close" class="close"><ion-icon name="close"></ion-icon></button>
+      <li>About Me <ion-icon name="person"></ion-icon></li>
+      <li>Past Work <ion-icon name="brush"></ion-icon> </li>
+      <li>Contact Me <ion-icon name="call"></ion-icon></li>
+    </div>
+    <div class="top">
+      <h1 id="heart">Hello <ion-icon name="hand-left" style="color: #964B00;"></ion-icon><br> My Name is Sameer Dhanda</h1>
+    </div>
+    <div class="scroll">
+      <a href="yourlink">
+          <div class="mouse">
+              <div class="wheel"></div>
+          </div>
+      </a>
+  </div>
+  </div>
+  <img class="topImg" src="top.png" draggable="false">
+  <div class="mid">
+    <div class="first">
+      <h2>About Me</h2>
+      <p>Hi there! My name Is Sameer Dhanda, I am currently a junior in highschool in Boston, MA and have a love for coding and design. In My spare time I enjoy gaming, hanging out with friends, collecting sneakers and baking. When I graduate I would like to further my knowledge in the field of Computer Science in college.</p>
+    </div>
+    <div class="second">
+      <h2>Past Work</h2>
+      <p>
+        <li>Co-Founder and Developer of <a href="https://twitter.com/AioHades">Hades AIO</a> 2020-22
+          <ol>* A Sneaker Purchasing Software meant for resellers and shoe collectors.</ol>
+        </li>
+        <li>Blueprint 2022
+          <ol>* Participated in a weekend long Hackathon ran by MIT Students.</ol>
+        </li>
+        <li>Creating Websites For Fun
+          <ol>* Making websites and web apps for fun and for family/freinds here is my dribble portfolio <a href="https://dribbble.com/sd_1235">Here</a></ol>
+        </li>
+      </p>
+    </div>
+    <div class="third">
+      <h2>Contact Me</h2>
+      <p>If you are interested in asking me any questions at all feel free to email me at dhandasameer27@gmail.com
+        <li>Or feel free to message me on one of my socials
+        <li style="list-style:none;" "><ion-icon name="logo-instagram"></ion-icon><a style="font-size:14px; color: white;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;"href="https://twitter.com/botterboysam"> : @botterboysam</a></li>
+        <li style="list-style:none;" "><ion-icon name="logo-twitter"></ion-icon><a style="font-size:14px; color: white;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: none;" href="https://instagram.com/sameer.dhanda3"> : @sameer.dhanda03</a></li>
+      </li>
+      </p>
+    </div>
+  </div>
+  <div class="bottom">
+    <p>Made with <ion-icon name="heart"></ion-icon></p>
+  </div>
+</body>
+<script src="index.js">
+var element = document.getElementById("#heart");
+element.addEventListener('click', function(){
+	console.log("click");
+});
+</script>
+</html>
